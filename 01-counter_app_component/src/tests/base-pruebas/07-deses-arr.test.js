@@ -1,0 +1,16 @@
+import { returnArray } from '../../base-pruebas/07-deses-arr'
+
+
+describe('Peuebas en 07-deses-arr', () => { 
+  test('Debe de retornar un string y un numero', () => { 
+    const [ letters, numbers ] = returnArray()
+
+    expect( letters ).toBe( 'ABC' )
+    expect( numbers ).toBe( 123 )
+
+    expect( typeof letters ).toBe( 'string' )
+    expect( typeof numbers ).toBe( 'number' )
+
+    expect( letters ).toEqual( expect.any(String) )
+  })
+})
