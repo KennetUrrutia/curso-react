@@ -1,4 +1,3 @@
-import React from 'react'
 // import CounterApp from './01-useState/CounterApp'
 // import CounterWithCustomHook from './01-useState/CounterWithCustomHook'
 // import FormWithCustomHook from './02-useEffect/FormWithCustomHook'
@@ -10,8 +9,11 @@ import React from 'react'
 // import Memorize from './06-memos/Memorize'
 // import CallBackHook from './06-memos/CallBackHook'
 // import { Padre } from './07-tarea-memo/Padre'
+// import TodoApp from './08-useReducer/TodoApp'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import './08-useReducer/intro-reducer'
-import TodoApp from './08-useReducer/TodoApp'
+import MainApp from './09-useContext/MainApp'
 
 const HooksApp = () => {
   return (
@@ -27,7 +29,10 @@ const HooksApp = () => {
       {/* <MemoHook /> */}
       {/* <CallBackHook /> */}
       {/* <Padre /> */}
-      <TodoApp />
+      {/* <TodoApp /> */}
+      <BrowserRouter>
+        <MainApp />
+      </BrowserRouter>
     </>
   )
 }
