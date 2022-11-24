@@ -22,6 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-hook-app/node_modules
-gift-expert-app-cra/node_modules
 01-counter_app_component/node_modules
+02-gift-expert-app-cra/node_modules
+03-hook-app/node_modules
