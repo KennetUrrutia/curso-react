@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-01-counter_app_component/node_modules
-02-gift-expert-app-cra/node_modules
-03-hook-app/node_modules
+counter_app_component/node_modules
+gift-expert-app-cra/node_modules
+hook-app/node_modules
 
 # dependencies
 /.pnp
