@@ -1,6 +1,14 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 export const NavBar = () => {
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    navigate('/login', {
+      replace: true //Evitar que el usuario regrese a la pagina anterior con las flechas
+    })
+  }
+
   return (
     <nav className='navbar navbar-expand-sm navbar-dark bg-dark p-2'>
 
@@ -15,30 +23,30 @@ export const NavBar = () => {
         <div className='navbar-nav'>
 
           <NavLink
-            className={({ isActive }) => `nav-item nav-link ${isActive? 'active' : ''}` }
+            className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
             to='/marvel'
           >
             Marvel
           </NavLink>
 
           <NavLink
-            className={({ isActive }) => `nav-item nav-link ${isActive? 'active' : ''}` }
+            className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
             to='/dc'
           >
             DC
           </NavLink>
-          <NavLink
-            className={({ isActive }) => `nav-item nav-link ${isActive? 'active' : ''}` }
+          {/* <NavLink
+            className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
             to='/search'
           >
             Search
           </NavLink>
           <NavLink
-            className={({ isActive }) => `nav-item nav-link ${isActive? 'active' : ''}` }
+            className={({ isActive }) => `nav-item nav-link ${isActive ? 'active' : ''}`}
             to='/heros'
           >
             Heros
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
 
@@ -48,7 +56,10 @@ export const NavBar = () => {
             Kennet
           </span>
 
-          <button className='nav-item nav-link btn'>
+          <button
+            className='nav-item nav-link btn'
+            onClick={handleLogout}
+          >
             Logout
           </button>
         </ul>
