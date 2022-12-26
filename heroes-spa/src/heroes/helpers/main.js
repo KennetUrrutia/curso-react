@@ -1,1 +1,0 @@
-export { getHeroesByPublisher } from './getHeroesByPublisher'
