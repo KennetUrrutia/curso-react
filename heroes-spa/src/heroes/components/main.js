@@ -1,2 +1,2 @@
-export { HeroCard } from "./HeroCard"
-export { HeroList } from "./HeroList"
+export { HeroCard } from './HeroCard'
+export { HeroList } from './HeroList'
