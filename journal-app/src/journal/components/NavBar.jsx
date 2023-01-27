@@ -22,7 +22,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
         <Grid
           container
           direction='row'
-          justifyContent='space-around'
+          justifyContent='space-between'
           alignItems='center'
         >
           <Typography
