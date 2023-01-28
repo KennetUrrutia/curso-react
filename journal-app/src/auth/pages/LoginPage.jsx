@@ -34,7 +34,7 @@ export const LoginPage = () => {
             <Grid item xs={12} sm={6} sx={{ mt: 2 }}>
               <Button variant='contained' fullWidth>
                 <Google />
-                <Typography variant="body1" sx={{ ml: 1 }}>Google</Typography>
+                <Typography variant='body1' sx={{ ml: 1 }}>Google</Typography>
               </Button>
             </Grid>
             <Grid container direction='row' justifyContent='end'>
