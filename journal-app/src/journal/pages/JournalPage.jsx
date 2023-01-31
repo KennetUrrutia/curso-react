@@ -1,8 +1,8 @@
-import { AddOutlined } from "@mui/icons-material"
-import { IconButton } from "@mui/material"
-import { JournalLayout } from "../Layout/JournalLayout"
-import { NoteView } from "../views"
-import { NothingSelectedView } from "../views/NothingSelectedView"
+import { AddOutlined } from '@mui/icons-material'
+import { IconButton } from '@mui/material'
+import { JournalLayout } from '../Layout/JournalLayout'
+import { NoteView } from '../views'
+import { NothingSelectedView } from '../views/NothingSelectedView'
 
 export const JournalPage = () => {
   return (
@@ -11,7 +11,7 @@ export const JournalPage = () => {
       {/* <NoteView /> */}
 
       <IconButton
-        size="large"
+        size='large'
         sx={{
           color: 'white',
           backgroundColor: 'error.main',

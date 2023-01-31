@@ -1,5 +1,5 @@
-import { TurnedInNot } from "@mui/icons-material"
-import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from "@mui/material"
+import { TurnedInNot } from '@mui/icons-material'
+import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material'
 
 export const SideBar = ({ drawerWidth = 240 }) => {
   return (
@@ -19,7 +19,7 @@ export const SideBar = ({ drawerWidth = 240 }) => {
         }}
       >
         <Toolbar>
-          <Typography variant="h6" noWrap>Kennet Urrutia</Typography>
+          <Typography variant='h6' noWrap>Kennet Urrutia</Typography>
         </Toolbar>
 
         <Divider />

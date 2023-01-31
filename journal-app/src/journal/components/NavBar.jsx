@@ -1,10 +1,10 @@
-import { LogoutOutlined, MenuOutlined } from "@mui/icons-material"
-import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material"
+import { LogoutOutlined, MenuOutlined } from '@mui/icons-material'
+import { AppBar, Grid, IconButton, Toolbar, Typography } from '@mui/material'
 
 export const NavBar = ({ drawerWidth = 240 }) => {
   return (
     <AppBar
-      position="fixed"
+      position='fixed'
       sx={{
         width: { sm: `calc(100% - ${drawerWidth}px)` },
         ml: { sm: `${drawerWidth}px` }
@@ -26,7 +26,7 @@ export const NavBar = ({ drawerWidth = 240 }) => {
           alignItems='center'
         >
           <Typography
-            variant="body1"
+            variant='body1'
             noWrap
           >
             JournalApp
