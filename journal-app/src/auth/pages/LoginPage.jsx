@@ -1,14 +1,20 @@
+import { useMemo } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import { Grid, Typography, TextField, Button, Link } from '@mui/material'
 import { Google } from '@mui/icons-material'
 import { AuthLayout } from '../layout/AuthLayout'
 import { useForm } from '../../hooks'
+import { useSelector } from 'react-redux'
 
 export const LoginPage = () => {
+  const { status } = useSelector(state => state.auth)
   const { email, password, handleChange, handleSubmit, handleGoogleSubmit } = useForm({
     email: 'kennetu200@gmail.com',
     password: 'RlqjFTfcfv'
   })
+
+  //Si el estatus es diferente de checking va a regresar un valor boolean en isAuthenticating
+  const isAuthenticating = useMemo(() => status === 'checking', [status])
 
   return (
     <AuthLayout title='login'>
@@ -40,6 +46,7 @@ export const LoginPage = () => {
           <Grid container spacing={2} sx={{ mb: 2 }}>
             <Grid item xs={12} sm={6} sx={{ mt: 2 }}>
               <Button
+                disabled={isAuthenticating}
                 fullWidth
                 variant='contained'
                 type='submit'
@@ -49,6 +56,7 @@ export const LoginPage = () => {
             </Grid>
             <Grid item xs={12} sm={6} sx={{ mt: 2 }}>
               <Button
+                disabled={isAuthenticating}
                 fullWidth
                 variant='contained'
                 onClick={handleGoogleSubmit}
